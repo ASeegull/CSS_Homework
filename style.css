@@ -1,21 +1,81 @@
 body{
-    background-color: #638a79;
-    background-image: url("img/body-bg.png");
-    background-repeat: repeat-x;
-    background-position: fixed;
+    background: #638a79 url("img/body-bg.png") repeat-x fixed;
+    font-family: "Arial", sans-serif;
+    line-height: 18px;
+    font-size: 13px;
+
 }
 
-.content {}
-.content .content-top {}
-.content .content-bottom {}
-.content .content-middle {}
-	
-h1 { }
-h2 { }
-	
-div.block-1 {}
-div.block-2 {}
+.content {
+    width: 840px;
+    margin: 100px auto 0;
+    background-color: #fff;
+   /* border-radius: 6px; */
+}
+    .content .content-top {
+    background: url(img/content-bg.png) no-repeat 0 0;
+    height: 12px;
 
-a.button {}
-a.button:hover {}
-a.button:active {}
+}
+
+ .content .content-bottom {
+    height: 12px;
+     background: url(img/content-bg.png);
+     background-position: 840px 0;
+}
+.content .content-middle {
+    margin: 20px 30px;
+    color: black;
+    font-style: normal;
+   /* padding: 20px 3px; */
+
+}
+	
+h1 {
+    font-size: 26px;
+    line-height: 36px;
+    color: #2b8c57;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 18px;
+    line-height: 28px;
+    color: #2b8c57;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+	
+div.block-1 {
+    background: url(img/block-1-bg.png) repeat-x;
+    background-color: #2b8c57;
+
+
+}
+div.block-2 {
+    background: url(img/picture-1.png) no-repeat bottom right;
+    background-color: #356149;
+}
+
+div[class^="block"] {
+    color: white;
+    font-style: italic;
+    padding: 30px;
+}
+
+a.button {
+    background: url(img/button-1.png) no-repeat 0 0;
+    display: block;
+    width: 121px;
+    height: 38px;
+    text-decoration: none;
+
+}
+a.button:hover {
+    background-position: 0 -38px;
+}
+a.button:active {
+    background-position: 0 -76px;
+}
